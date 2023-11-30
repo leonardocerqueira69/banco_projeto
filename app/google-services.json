@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "811827766671",
+    "project_id": "banco-5c208",
+    "storage_bucket": "banco-5c208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811827766671:android:892087f34357a8069517fa",
+        "android_client_info": {
+          "package_name": "com.projeto.banco"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjn4eq47SvZO9OYLP-k7NyTZLbWpgGtdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
