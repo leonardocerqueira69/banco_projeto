@@ -28,15 +28,15 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text_cpf"
+            android:id="@+id/text_email"
             style="@style/text_login"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/logo"
-            android:hint="CPF"
-            android:drawableRight="@drawable/icon_person"
-            android:inputType="number"
-            android:maxLength="11">
+            android:hint="Email"
+            android:drawableRight="@drawable/ic_email"
+            android:inputType="textEmailAddress"
+            >
         </EditText>
 
         <EditText
@@ -46,7 +46,7 @@
             style="@style/text_login"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_cpf"
+            app:layout_constraintTop_toBottomOf="@id/text_email"
             android:hint="Senha"
             android:drawableRight="@drawable/icon_eye"
             android:textAllCaps="false"
@@ -71,13 +71,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="@string/regristro"
+            android:text="@string/registro"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bt_entrar"></TextView>
+            app:layout_constraintTop_toBottomOf="@id/bt_entrar"
+            android:layout_marginTop="8dp"
+            >
+        </TextView>
 
         <ProgressBar
             android:id="@+id/progress_bar"

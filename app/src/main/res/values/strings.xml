@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">StarBank</string>
     <string name="bt_entrar">Entrar</string>
-    <string name="regristro">Nâo tem conta? Registre-se aqui.</string>
+    <string name="registro">Não tem conta? Registre-se aqui.</string>
     <string name="bt_registro">Registre-se</string>
     <string name="text_registro">Insira os seus dados para cadastro:</string>
     <string name="cpf">CPF</string>
