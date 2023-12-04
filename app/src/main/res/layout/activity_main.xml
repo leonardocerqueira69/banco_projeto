@@ -137,6 +137,36 @@
         app:layout_constraintBottom_toTopOf="@id/servicos1"
         android:layout_marginBottom="-75dp"/>
 
+    <View
+        android:id="@+id/servicos2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/container_servicos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/servicos"
+        android:layout_marginStart="220dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_servicos_recarga"
+        app:layout_constraintStart_toStartOf="@id/servicos2"
+        app:layout_constraintEnd_toEndOf="@id/servicos2"
+        app:layout_constraintBottom_toTopOf="@id/servicos2"
+        android:layout_marginBottom="-50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recarregar celular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/servicos2"
+        app:layout_constraintEnd_toEndOf="@id/servicos2"
+        app:layout_constraintBottom_toTopOf="@id/servicos2"
+        android:layout_marginBottom="-75dp"/>
+
 
 
 
