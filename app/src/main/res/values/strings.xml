@@ -7,4 +7,6 @@
     <string name="cpf">CPF</string>
     <string name="email">Email</string>
     <style name="bt_registrar">Registrar</style>
+    <string name="txt_saldo_conta">R$00,00</string>
+
 </resources>
