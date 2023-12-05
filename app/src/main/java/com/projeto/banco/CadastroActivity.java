@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.text.InputFilter;
+import android.text.Spanned;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -135,6 +137,21 @@ public class CadastroActivity extends AppCompatActivity {
         editText_nome = findViewById(R.id.editText_nome);
         editText_data_nascimento = findViewById(R.id.editText_data_nascimento);
         bt_registrar = findViewById(R.id.bt_registrar);
+
+        editText_cpf.setFilters(new InputFilter[] {
+            new InputFilter() {
+                @Override
+                public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend){
+                    for(int i = start; i < end; i++){
+                        char character = source.charAt(i);
+                        if(!Character.isDigit(character) && character != '.' && character != '-'){
+                            return "";
+                        }
+                    }
+                    return null;
+                }
+            }
+        });
     }
 
 }

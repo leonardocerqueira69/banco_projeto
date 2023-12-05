@@ -89,6 +89,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText_data_nascimento"
             android:hint="Senha"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/icon_eye"
+            android:drawablePadding="8dp"
+
             />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -102,6 +106,9 @@
             android:text="@string/bt_registro"
             android:textColor="@color/white"
             android:textStyle="bold"/>
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
