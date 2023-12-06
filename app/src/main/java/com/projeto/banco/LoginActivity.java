@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                         public void run() {
                             telaPrincipal();
                         }
-                    }, 2000);
+                    }, 0500);
                 }else{
                     String erro;
 
