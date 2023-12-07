@@ -13,6 +13,32 @@
         android:theme="@style/Theme.Banco"
         tools:targetApi="34">
         <activity
+            android:name=".SegurosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CofrinhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferenciasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmprestimoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Meus_CartoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CobrarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PixActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pix"
+            android:theme="@style/Theme.Banco" />
+        <activity
             android:name=".CadastroActivity"
             android:exported="false" />
         <activity

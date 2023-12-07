@@ -350,12 +350,41 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confrinho"
+        android:text="Cofrinho"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@id/servicos7"
         app:layout_constraintEnd_toEndOf="@id/servicos7"
         app:layout_constraintBottom_toTopOf="@id/servicos7"
+        android:layout_marginBottom="-75dp"/>
+
+    <View
+        android:id="@+id/servicos8"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/container_servicos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/servicos6"
+        android:layout_marginStart="210dp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_seguros"
+        app:layout_constraintStart_toStartOf="@id/servicos8"
+        app:layout_constraintEnd_toEndOf="@id/servicos8"
+        app:layout_constraintBottom_toTopOf="@id/servicos8"
+        android:layout_marginBottom="-50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguros" android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/servicos8"
+        app:layout_constraintEnd_toEndOf="@id/servicos8"
+        app:layout_constraintBottom_toTopOf="@id/servicos8"
         android:layout_marginBottom="-75dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
