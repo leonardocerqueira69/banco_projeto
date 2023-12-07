@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -264,8 +268,95 @@
         android:textColor="@color/black"
         android:textSize="18sp"></TextView>
 
+    <View
+        android:id="@+id/servicos5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/container_servicos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_meus_cartoes"
+        android:layout_marginStart="35dp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_emprestimo"
+        app:layout_constraintStart_toStartOf="@id/servicos5"
+        app:layout_constraintEnd_toEndOf="@id/servicos5"
+        app:layout_constraintBottom_toTopOf="@id/servicos5"
+        android:layout_marginBottom="-50dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empréstimo"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/servicos5"
+        app:layout_constraintEnd_toEndOf="@id/servicos5"
+        app:layout_constraintBottom_toTopOf="@id/servicos5"
+        android:layout_marginBottom="-75dp"/>
 
+    <View
+        android:id="@+id/servicos6"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/container_servicos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_meus_cartoes"
+        android:layout_marginStart="210dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_transferias"
+        app:layout_constraintStart_toStartOf="@id/servicos6"
+        app:layout_constraintEnd_toEndOf="@id/servicos6"
+        app:layout_constraintBottom_toTopOf="@id/servicos6"
+        android:layout_marginBottom="-50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transferências"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/servicos6"
+        app:layout_constraintEnd_toEndOf="@id/servicos6"
+        app:layout_constraintBottom_toTopOf="@id/servicos6"
+        android:layout_marginBottom="-75dp"/>
+
+    <View
+        android:id="@+id/servicos7"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/container_servicos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/servicos5"
+        android:layout_marginStart="35dp"/>
+
+    <ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_cofrinho"
+    app:layout_constraintStart_toStartOf="@id/servicos7"
+    app:layout_constraintEnd_toEndOf="@id/servicos7"
+    app:layout_constraintBottom_toTopOf="@id/servicos7"
+    android:layout_marginBottom="-50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confrinho"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/servicos7"
+        app:layout_constraintEnd_toEndOf="@id/servicos7"
+        app:layout_constraintBottom_toTopOf="@id/servicos7"
+        android:layout_marginBottom="-75dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
