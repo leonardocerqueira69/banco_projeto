@@ -6,4 +6,234 @@
     android:layout_height="match_parent"
     tools:context=".PixActivity">
 
+
+
+    <ImageView
+        android:id="@+id/containerComponents"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area_pix"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/mandar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandar:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/container_circulo1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/container_circulo_areapix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer pix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo1"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo1"
+        android:layout_marginStart="65dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"></TextView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_servicos_pix"
+        app:layout_constraintStart_toStartOf="@id/container_circulo1"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo1"
+        app:layout_constraintTop_toTopOf="@id/container_circulo1"
+        android:layout_marginTop="18dp"/>
+
+    <View
+        android:id="@+id/container_circulo2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/container_circulo_areapix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Gerar \nQR code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo2"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo2"
+        android:layout_marginStart="155dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_qrcode"
+        app:layout_constraintStart_toStartOf="@id/container_circulo2"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo2"
+        app:layout_constraintTop_toTopOf="@id/container_circulo2"
+        android:layout_marginTop="18dp"/>
+
+    <View
+        android:id="@+id/container_circulo3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/container_circulo_areapix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pix_copia_cola"
+        app:layout_constraintStart_toStartOf="@id/container_circulo3"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo3"
+        app:layout_constraintTop_toTopOf="@id/container_circulo3"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Pix \n Copia e \n   Cola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo3"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo3"
+        android:layout_marginStart="245dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/receber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Receber:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo1" />
+
+    <View
+        android:id="@+id/container_circulo4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/container_circulo_areapix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receber"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_dinheiro_servicos"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo4"
+        app:layout_constraintStart_toStartOf="@id/container_circulo4"
+        app:layout_constraintTop_toTopOf="@id/container_circulo4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cobrar"
+        app:layout_constraintStart_toStartOf="@id/container_circulo4"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo4"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo4"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <View
+        android:id="@+id/container_circulo5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/container_circulo_areapix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receber"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_depositos"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo5"
+        app:layout_constraintStart_toStartOf="@id/container_circulo5"
+        app:layout_constraintTop_toTopOf="@id/container_circulo5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depositar"
+        app:layout_constraintStart_toStartOf="@id/container_circulo5"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo5"
+        app:layout_constraintEnd_toEndOf="@id/container_circulo5"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <View
+        android:id="@+id/container_chaves_pix"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/meus_cartoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_circulo5"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registar chaves pix"
+        app:layout_constraintStart_toStartOf="@id/container_chaves_pix"
+        app:layout_constraintBottom_toTopOf="@id/container_chaves_pix"
+        android:layout_marginBottom="-40dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

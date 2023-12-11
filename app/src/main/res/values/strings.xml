@@ -6,6 +6,8 @@
     <string name="text_registro">Insira os seus dados para cadastro:</string>
     <string name="cpf">CPF</string>
     <string name="email">Email</string>
+    <string name="area_pix">Área pix\n\n Envie e receba pagamentos a qualquer hora e dia\n da semana, sem
+    pagar taxas.</string>
 
     <style name="bt_registrar">Registrar</style>
 
