@@ -6,4 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".Recarga_CelularActivity">
 
+    <ImageView
+        android:id="@+id/containerComponents"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recarga_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Recarga Telefone"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+    <TextView
+        android:id="@+id/recarga_telefone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Recarregue seu telefone\n no conforto de casa!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/recarga_telefone"
+        app:layout_constraintStart_toStartOf="@id/recarga_telefone"
+        app:layout_constraintTop_toTopOf="@id/recarga_telefone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual é sua operadora?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <RadioButton
+        android:id="@+id/Claro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLARO"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:layout_marginTop="50dp"/>
+
+    <RadioButton
+        android:id="@+id/TIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIM"
+        app:layout_constraintStart_toStartOf="@id/Claro"
+        app:layout_constraintTop_toBottomOf="@id/Claro"
+        android:layout_marginTop="25dp" />
+
+    <RadioButton
+        android:id="@+id/VIVO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIVO"
+        app:layout_constraintStart_toStartOf="@id/TIM"
+        app:layout_constraintTop_toBottomOf="@id/TIM"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/VIVO"
+        android:text="Qual o seu número de telefone?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <EditText
+        android:id="@+id/container_num"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="   Número telefone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VIVO"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/container_num_telefone"
+        android:layout_marginEnd="15dp"
+        android:elevation="15dp"
+        android:drawableRight="@drawable/ic_phone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_recarga"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        style="@style/bt_recarga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_num"
+        android:text="Recarregar"
+        android:layout_marginTop="65dp"
+        android:textColor="@color/white"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

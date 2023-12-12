@@ -20,6 +20,12 @@
     </style>
 
 
+    <style name="bt_recarga">
+        <item name="android:background">@drawable/bt_recarga</item>
+        <item name="android:padding">20dp</item>
+
+    </style>
+
 
 
     
