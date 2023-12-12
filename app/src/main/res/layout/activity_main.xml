@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -123,13 +123,14 @@
         android:layout_marginStart="35dp"/>
 
     <ImageView
+        android:id="@+id/ic_servicos_pix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
         android:src="@drawable/ic_servicos_pix"
-        app:layout_constraintStart_toStartOf="@id/servicos1"
-        app:layout_constraintEnd_toEndOf="@id/servicos1"
         app:layout_constraintBottom_toTopOf="@id/servicos1"
-        android:layout_marginBottom="-50dp"/>
+        app:layout_constraintEnd_toEndOf="@id/servicos1"
+        app:layout_constraintStart_toStartOf="@id/servicos1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -153,13 +154,14 @@
         android:layout_marginStart="210dp"/>
 
     <ImageView
+        android:id="@+id/ic_servicos_recarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
         android:src="@drawable/ic_servicos_recarga"
-        app:layout_constraintStart_toStartOf="@id/servicos2"
-        app:layout_constraintEnd_toEndOf="@id/servicos2"
         app:layout_constraintBottom_toTopOf="@id/servicos2"
-        android:layout_marginBottom="-50dp"/>
+        app:layout_constraintEnd_toEndOf="@id/servicos2"
+        app:layout_constraintStart_toStartOf="@id/servicos2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -183,13 +185,14 @@
         android:layout_marginStart="35dp"/>
 
     <ImageView
+        android:id="@+id/ic_seguros"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginBottom="-50dp"
         android:src="@drawable/ic_seguros"
-        app:layout_constraintStart_toStartOf="@id/servicos3"
-        app:layout_constraintEnd_toEndOf="@id/servicos3"
         app:layout_constraintBottom_toTopOf="@id/servicos3"
-        android:layout_marginBottom="-50dp"/>
+        app:layout_constraintEnd_toEndOf="@id/servicos3"
+        app:layout_constraintStart_toStartOf="@id/servicos3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -213,13 +216,14 @@
         android:layout_marginStart="210dp"/>
 
     <ImageView
+        android:id="@+id/ic_codigo_barras"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginBottom="-50dp"
         android:src="@drawable/ic_codigo_barras"
-        app:layout_constraintStart_toStartOf="@id/servicos4"
-        app:layout_constraintEnd_toEndOf="@id/servicos4"
         app:layout_constraintBottom_toTopOf="@id/servicos4"
-        android:layout_marginBottom="-50dp"/>
+        app:layout_constraintEnd_toEndOf="@id/servicos4"
+        app:layout_constraintStart_toStartOf="@id/servicos4" />
 
 
     <TextView
@@ -279,13 +283,14 @@
         android:layout_marginStart="35dp"/>
 
     <ImageView
+        android:id="@+id/ic_emprestimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
         android:src="@drawable/ic_emprestimo"
-        app:layout_constraintStart_toStartOf="@id/servicos5"
-        app:layout_constraintEnd_toEndOf="@id/servicos5"
         app:layout_constraintBottom_toTopOf="@id/servicos5"
-        android:layout_marginBottom="-50dp"/>
+        app:layout_constraintEnd_toEndOf="@id/servicos5"
+        app:layout_constraintStart_toStartOf="@id/servicos5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -309,13 +314,14 @@
         android:layout_marginStart="210dp"/>
 
     <ImageView
+        android:id="@+id/ic_transferias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
         android:src="@drawable/ic_transferias"
-        app:layout_constraintStart_toStartOf="@id/servicos6"
-        app:layout_constraintEnd_toEndOf="@id/servicos6"
         app:layout_constraintBottom_toTopOf="@id/servicos6"
-        android:layout_marginBottom="-50dp"/>
+        app:layout_constraintEnd_toEndOf="@id/servicos6"
+        app:layout_constraintStart_toStartOf="@id/servicos6" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -339,13 +345,14 @@
         android:layout_marginStart="125dp"/>
 
     <ImageView
-    android:layout_width="24dp"
-    android:layout_height="24dp"
-    android:src="@drawable/ic_cofrinho"
-    app:layout_constraintStart_toStartOf="@id/servicos7"
-    app:layout_constraintEnd_toEndOf="@id/servicos7"
-    app:layout_constraintBottom_toTopOf="@id/servicos7"
-    android:layout_marginBottom="-50dp"/>
+        android:id="@+id/ic_cofrinho"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="-50dp"
+        android:src="@drawable/ic_cofrinho"
+        app:layout_constraintBottom_toTopOf="@id/servicos7"
+        app:layout_constraintEnd_toEndOf="@id/servicos7"
+        app:layout_constraintStart_toStartOf="@id/servicos7" />
 
     <TextView
         android:layout_width="wrap_content"

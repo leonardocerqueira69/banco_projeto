@@ -41,6 +41,7 @@
         <activity
             android:name=".CadastroActivity"
             android:exported="false" />
+        <activity android:name=".Recarga_CelularActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
