@@ -6,4 +6,159 @@
     android:layout_height="match_parent"
     tools:context=".SegurosActivity">
 
+    <ImageView
+        android:id="@+id/containerComponents"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguros"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contratar:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:textSize="25sp"
+        android:layout_marginStart="15dp"/>
+
+    <View
+        android:id="@+id/container_seguros1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/container_cinza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Seguro de vida"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:drawableRight="@drawable/ic_seguro_vida"
+        app:layout_constraintStart_toStartOf="@id/container_seguros1"
+        app:layout_constraintBottom_toBottomOf="@id/container_seguros1"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintEnd_toEndOf="@id/container_seguros1"
+        app:layout_constraintBottom_toBottomOf="@id/container_seguros1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"/>
+
+    <View
+        android:id="@+id/container_seguros2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/container_cinza"
+        app:layout_constraintStart_toStartOf="@id/container_seguros1"
+        app:layout_constraintTop_toBottomOf="@id/container_seguros1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Seguro Auto"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:drawableRight="@drawable/ic_car"
+        app:layout_constraintStart_toStartOf="@id/container_seguros2"
+        app:layout_constraintBottom_toBottomOf="@id/container_seguros2"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toEndOf="@id/arrow1"
+        app:layout_constraintTop_toBottomOf="@id/arrow1"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="-25dp"/>
+
+
+    <View
+        android:id="@+id/container_seguros3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/container_cinza"
+        app:layout_constraintStart_toStartOf="@id/container_seguros2"
+        app:layout_constraintTop_toBottomOf="@id/container_seguros2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Seguro residencial"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:drawableRight="@drawable/ic_home"
+        app:layout_constraintStart_toStartOf="@id/container_seguros3"
+        app:layout_constraintBottom_toBottomOf="@id/container_seguros3"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/arrow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toEndOf="@id/arrow2"
+        app:layout_constraintTop_toBottomOf="@id/arrow2"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="-25dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_recarga"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        style="@style/bt_recarga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_seguros3"
+        android:text="Acionar Seguro"
+        android:layout_marginTop="65dp"
+        android:textColor="@color/white"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
